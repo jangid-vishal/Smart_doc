@@ -1,0 +1,11 @@
+{
+  "name": "smart-doc",
+  "private": true,
+  "scripts": {
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "build": "npm run build --prefix client",
+    "start": "npm run build && npm run start --prefix server",
+    "seed": "npm run seed --prefix server"
+  }
+}
