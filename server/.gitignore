@@ -1,8 +1,9 @@
-node_modules
+node_modules/
+dist/
+build/
+
 .env
 .env.local
+.env.development
 .env.production
-.env.example
-.env.devlopment
-dist
-build
+.env.test
