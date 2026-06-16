@@ -61,6 +61,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
+app.get('/api/test', (req, res) => {
+  res.json({ success: true, message: 'Backend working' });
+});
+
 app.use('/api/auth', authRoutes);
 app.use('/api/auth', passwordResetRoutes);
 app.use('/api/doctors', doctorRoutes);
